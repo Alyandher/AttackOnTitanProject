@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 8, 8);
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: 'Indie Flower', cursive;
+}
+
+li:hover {
+    color: red;
+}
+
+#logo {
+    width: 70px;
+    height: auto;
+}
+
+#banner {
+    background-image: url(./78ebbfc64cc407b773d71b7ec63dbde78293f74f672bf1b10c5985e3c13e9a47._AC_SX720_FMjpg_.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 60%;
+    height: 350px;
+}
+
+#sinopse {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.description {
+    color: white;
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    width: 100%;
+}
+
+.button {
+    width: 200px;
+    height: 35px;
+    background-color: #b32400;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.banner-1 {
+    background-image: url('https://kanto.legiaodosherois.com.br/w728-h381-gnw-cfill-gcc-f:fbcover/wp-content/uploads/2022/01/legiao_g5IVuNqbsjQe.jpg.webp')
+}
+
+.banner-2 {
+    background-image: url('https://kanto.legiaodosherois.com.br/w728-h381-gnw-cfill-gcc-f:fbcover/wp-content/uploads/2021/10/legiao_rVWJcFlgTSIh.jpg.webp');
+}
+
+.banner-3 {
+    background-image: url('https://metagalaxia.com.br/wp-content/uploads/2023/03/Mikasa-Ackerman.webp');
+}
+
+.banner-4 {
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/armin-arlert-attack-on-titan-s4-william-stratton.jpg');
+}
+
+.banner-5 {
+    background-image: url('https://wallpaperaccess.com/full/5917054.jpg');
+}
+
+.banner-6 {
+    background-image: url('https://i.pinimg.com/originals/e5/d7/8b/e5d78bc57686a5e858d334f0fd93ee1e.jpg');
+}
+
+.banner-7 {
+    background-image: url('https://i.pinimg.com/originals/ce/7b/0a/ce7b0a2faa72ae6fc46abd59065308fa.jpg');
+}
+
+.banner-8 {
+    background-image: url('https://i.pinimg.com/474x/cc/ba/69/ccba695dfdbc555d15840ff5c83ca6a9.jpg');
+}
+
+.banner-9 {
+    background-image: url('https://yt3.ggpht.com/a/AATXAJwDrtuHwEGWSpSlA-_0t2D70k8y5lQBxSH7oA=s900-c-k-c0xffffffff-no-rj-mo');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-size: 100%;
+        height: 230px;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        margin-top: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #sinopse {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 250px;
+    }
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Indie Flower', cursive;
+}
+
+:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('./78ebbfc64cc407b773d71b7ec63dbde78293f74f672bf1b10c5985e3c13e9a47._AC_SX720_FMjpg_.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+
+}
+
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.banner-1 {
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/250337591468491600/83843F708679EF30A141D479E1B7F99B981C9F38/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+}
+
+.banner-2 {
+    background-image: url('https://i2.wp.com/i.pinimg.com/originals/f7/34/0e/f7340e5f7994ff5e8deac729c60a03b1.gif');
+}
+
+.banner-3 {
+    background-image: url('https://i.gifer.com/NdlA.gif');
+}
+
+.banner-4 {
+    background-image: url('https://media.tenor.com/gg6t__SauEAAAAAC/armin-arlert-armin.gif');
+}
+
+.banner-5 {
+    background-image: url('https://i.pinimg.com/originals/f6/d6/c4/f6d6c43efe032097de2888795efd9e6a.gif');
+}
+
+.banner-6 {
+    background-image: url('https://media.tenor.com/z9mOdkMjCFwAAAAd/christa-lenz-historia-reiss.gif');
+}
+
+.banner-7 {
+    background-image: url('https://i.imgur.com/M5thwQp.gif');
+}
+
+.banner-8 {
+    background-image: url('https://64.media.tumblr.com/9bae0250f45cf3d715c43b7ddebc387c/e79138be0499be86-61/s540x810/a1021c235d59d6abc5e5ef0aaee7a8dfe75e668e.gif');
+}
+
+.banner-9 {
+    background-image: url('https://media.tenor.com/IOlk2FW5gKIAAAAd/levi-ackerman-shingeki-no-kyojin.gif');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    
+   .cards-content {
+        grid-template-columns: 1fr;
+    }
+}
